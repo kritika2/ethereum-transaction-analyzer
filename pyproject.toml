@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ethereum-transaction-analyzer"
+version = "1.0.0"
+description = "A comprehensive Ethereum transaction analyzer that fetches and exports transaction data to CSV"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Kritika", email = "your.email@example.com"}
+]
+keywords = ["ethereum", "blockchain", "transactions", "csv", "etherscan", "crypto"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business :: Financial",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.32.0",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "web3>=7.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/kritika2/ethereum-transaction-analyzer"
+Repository = "https://github.com/kritika2/ethereum-transaction-analyzer"
+Issues = "https://github.com/kritika2/ethereum-transaction-analyzer/issues"
+
+[project.scripts]
+eth-analyzer = "app.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
