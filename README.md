@@ -95,7 +95,7 @@ This project fetches Ethereum transaction data for a specified wallet and export
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/kritika2/ethereum-transaction-analyzer.git
+   git clone https://github.com/yourusername/ethereum-transaction-analyzer.git
    cd ethereum-transaction-analyzer
    ```
 
@@ -103,16 +103,15 @@ This project fetches Ethereum transaction data for a specified wallet and export
    ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -e .
+   pip install -r requirements.txt
    ```
 
 3. **Configure environment variables**
-   Copy the example environment file and add your API key:
+   Create a `.env` file in the root directory:
    ```bash
-   cp env.example .env
-   # Edit .env and replace 'your_etherscan_api_key_here' with your actual API key
+   echo "ETHERSCAN_API_KEY=your_api_key_here" > .env
    ```
-   Get your free API key from [Etherscan API](https://etherscan.io/apis).
+   Replace `your_api_key_here` with your actual Etherscan API key.
 
 ## Running the Script
 
@@ -215,16 +214,6 @@ This tool just makes sure it's properly formatted in CSV!"
           Built with ❤️ for blockchain enthusiasts
       "Making crypto accounting less cryptic!"
 ```
-
-## 🌟 Features
-
-- **Multi-Transaction Support**: Fetches External, Internal, ERC-20, and ERC-721 transactions
-- **Smart Deduplication**: Removes duplicate transactions automatically
-- **Robust Error Handling**: Exponential backoff retry logic for API failures
-- **Flexible Block Ranges**: Specify custom start and end blocks
-- **Clean CSV Output**: Human-readable timestamps and properly formatted amounts
-- **Rate Limit Friendly**: Built-in delays to respect Etherscan API limits
-- **Comprehensive Testing**: Full test coverage for reliability
 
 *P.S. - No transactions were harmed in the making of this CSV exporter. All gas fees were calculated responsibly.* 🌱⛽
 

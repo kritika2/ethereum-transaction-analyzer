@@ -2,9 +2,9 @@ import argparse
 import logging
 import time
 from dotenv import load_dotenv
-from .fetch_all_transactions import fetch_all_transactions
-from .csv_writer import write_transactions_to_csv
-from .utils import is_valid_eth_address
+from fetch_all_transactions import fetch_all_transactions
+from csv_writer import write_transactions_to_csv
+from utils import is_valid_eth_address
 
 load_dotenv()
 

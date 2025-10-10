@@ -2,7 +2,7 @@ import time
 import random
 import logging
 from typing import List, Dict
-from .utils import etherscan_request, format_timestamp, format_token_amount, calculate_gas_fee
+from utils import etherscan_request, format_timestamp, format_token_amount, calculate_gas_fee
 
 MAX_PAGES_PER_TYPE = 50  # max pages per tx type to avoid infinite loop
 MAX_RETRIES = 5
