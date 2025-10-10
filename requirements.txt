@@ -1,0 +1,14 @@
+# Core dependencies
+requests>=2.32.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+web3>=7.0.0
+
+# Development dependencies (optional)
+# Uncomment if you need them for testing/development:
+# pytest>=8.0.0
+# pytest-cov>=4.0.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
+

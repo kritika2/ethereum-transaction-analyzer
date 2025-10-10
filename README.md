@@ -95,7 +95,7 @@ This project fetches Ethereum transaction data for a specified wallet and export
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ethereum-transaction-analyzer.git
+   git clone https://github.com/kritika2/ethereum-transaction-analyzer.git
    cd ethereum-transaction-analyzer
    ```
 
