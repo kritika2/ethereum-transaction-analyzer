@@ -1,8 +1,8 @@
-# 🚀 Ethereum Transaction Analyzer
+# Ethereum Transaction Analyzer
 
 This project fetches Ethereum transaction data for a specified wallet and exports it to a CSV file. The data includes details for different types of transactions: External, Internal, ERC-20, and ERC-721.
 
-> *"Turning blockchain chaos into beautiful CSV order, one transaction at a time!"* 📊💎
+> *"Turning blockchain chaos into beautiful CSV order, one transaction at a time!"* 
 
 ## Objective
 
@@ -215,7 +215,7 @@ This tool just makes sure it's properly formatted in CSV!"
       "Making crypto accounting less cryptic!"
 ```
 
-*P.S. - No transactions were harmed in the making of this CSV exporter. All gas fees were calculated responsibly.* 🌱⛽
+*P.S. - No transactions were harmed in the making of this CSV exporter. All gas fees were calculated responsibly.* 
 
 
 
