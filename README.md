@@ -2,7 +2,7 @@
 
 This project fetches Ethereum transaction data for a specified wallet and exports it to a CSV file. The data includes details for different types of transactions: External, Internal, ERC-20, and ERC-721 etc.
 
-> *"Turning blockchain chaos into beautiful CSV order, one transaction at a time!"* 
+> *"Turning blockchain chaos into beautiful CSV order, one transaction at a time"* 
 
 ## Objective
 
